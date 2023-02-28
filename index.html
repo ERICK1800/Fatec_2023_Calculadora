@@ -79,7 +79,29 @@
                     }
                 </script>
             </form>
-        </div>  
+        </div>
+        <div id="calculo">
+            <h1>DIVISÃO</h1>
+            <form>
+                <input type="text" id="num5">
+                /
+                <input type="text"id="num6">
+                <button type="button" onclick="dividir()">Subtrair</button>
+                <input type="text" id="resp3" readonly>
+                <script>
+                    function dividir(){
+                        var num5, num6, resp3;
+    
+                        num5 = parseFloat(document.getElementById("num5").value);
+                        num6 = parseFloat(document.getElementById("num6").value);
+    
+                        resp3 = num5 / num6;
+    
+                        document.getElementById("resp3").value = resp3;
+                    }
+                </script>
+            </form>
+        </div>
     </article>
 </body>
 </html>
