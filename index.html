@@ -6,54 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body{
+            font-family: Helvetica;
             background-color: #c6c6c6;
-        }
-        h1{
-            text-align: center;
-            margin-left: 30px;
         }
         article{
             background-color: white;
-            margin-left: 30%;
-            margin-right: 30%;
+            padding-bottom: 40px;
+            margin-left: 25%;
+            margin-right: 25%;
             box-shadow: 10px 5px 5px black;
         }
         form{
             text-align: center;
         }
-        #num1{
-            margin-top: 30px;
+        #title{
+            text-align: center;
+            margin-left: 30px;
         }
         #resp{
             margin-bottom: 30px;
+        }
+        #calculo{
+            text-align: center;
+            padding-top: 20px;
         }
     </style>
     <title>Calculadora</title>
 </head>
 <body>
-    <h1>Calculadora Básica</h1>
+    <h1 id="title">Calculadora Básica</h1>
     <article>
-        <div>
+        <div id="calculo">
+            <h1>SOMA</h1>
             <form>
-                <input type="text" name="number1" id="num1">
+                <input type="text" id="num1">
                 +
-                <input type="text" name="number2" id="num2">
+                <input type="text" id="num2">
                 <button type="button" onclick="somar()">Somar</button>
-                <input type="text" name="result" id="resp" readonly>
+                <input type="text" id="resp1" readonly>
                 <script>
                     function somar(){
-                        var num1, num2, resp;
+                        var num1, num2, resp1;
     
                         num1 = parseFloat(document.getElementById("num1").value);
                         num2 = parseFloat(document.getElementById("num2").value);
     
-                        resp = num1 + num2;
+                        resp1 = num1 + num2;
     
-                        document.getElementById("resp").value = resp;
+                        document.getElementById("resp1").value = resp1;
                     }
                 </script>
             </form>
         </div>
+        <div id="calculo">
+            <h1>SUBTRAÇÃO</h1>
+            <form>
+                <input type="text" id="num3">
+                -
+                <input type="text"id="num4">
+                <button type="button" onclick="subtrair()">Subtrair</button>
+                <input type="text" id="resp2" readonly>
+                <script>
+                    function subtrair(){
+                        var num3, num4, resp2;
+    
+                        num3 = parseFloat(document.getElementById("num3").value);
+                        num4 = parseFloat(document.getElementById("num4").value);
+    
+                        resp2 = num3 - num4;
+    
+                        document.getElementById("resp2").value = resp2;
+                    }
+                </script>
+            </form>
+        </div>  
     </article>
 </body>
 </html>
