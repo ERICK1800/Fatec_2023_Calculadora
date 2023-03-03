@@ -102,6 +102,28 @@
                 </script>
             </form>
         </div>
+        <div id="calculo">
+            <h1>MULTIPLIÇÃO</h1>
+            <form>
+                <input type="text" id="num7">
+                /
+                <input type="text"id="num8">
+                <button type="button" onclick="multiplicar()">Subtrair</button>
+                <input type="text" id="resp4" readonly>
+                <script>
+                    function multiplicar(){
+                        var num7, num8, resp4;
+    
+                        num7 = parseFloat(document.getElementById("num7").value);
+                        num8 = parseFloat(document.getElementById("num8").value);
+    
+                        resp4 = num7 * num8;
+    
+                        document.getElementById("resp4").value = resp4;
+                    }
+                </script>
+            </form>
+        </div>
     </article>
 </body>
 </html>
