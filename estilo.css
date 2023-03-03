@@ -4,20 +4,61 @@ body{
 }
 article{
     background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     padding-bottom: 40px;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin: 10% 30% 10% 30%;
+    border-radius: 20px;
     box-shadow: 10px 5px 5px black;
 }
 form{
     text-align: center;
 }
 #title{
+    font-size: 40px;
     text-align: center;
     margin-left: 30px;
+    padding-top: 20px;
 }
-#resp{
+button{
+    font-size: 20px;
+    padding-right: 5%;
+    padding-left: 5%;
+    width: 45%;
+    border-radius: 20px;
+    padding: 15px;
+}
+#num1{
+    font-size: 20px;
+    text-align: center;
+    border-radius: 20px;
+    padding-right: 5%;
+    padding-left: 5%;
+    width: 40%;
+    padding: 15px;
+}
+#num2{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-right: 5%;
+    padding-left: 5%;
+    width: 40%;
+    border-radius: 20px;
+    padding: 15px;
+}
+#resp1{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
     margin-bottom: 30px;
+    padding-right: 5%;
+    padding-left: 5%;
+    width: 85%;
+    border-radius: 20px;
+    padding: 15px;
 }
 #calculo{
     text-align: center;
