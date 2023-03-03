@@ -4,33 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body{
-            font-family: Helvetica;
-            background-color: #c6c6c6;
-        }
-        article{
-            background-color: white;
-            padding-bottom: 40px;
-            margin-left: 25%;
-            margin-right: 25%;
-            box-shadow: 10px 5px 5px black;
-        }
-        form{
-            text-align: center;
-        }
-        #title{
-            text-align: center;
-            margin-left: 30px;
-        }
-        #resp{
-            margin-bottom: 30px;
-        }
-        #calculo{
-            text-align: center;
-            padding-top: 20px;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <script type="text/javascript" src="funcoes.js"></script>
     <title>Calculadora</title>
 </head>
 <body>
@@ -42,20 +17,11 @@
                 <input type="text" id="num1">
                 +
                 <input type="text" id="num2">
-                <button type="button" onclick="somar()">Somar</button>
+                <button type="button" onclick="somar()">Somar</button><!--
+                <button type="button" onclick="subtrair()">Subtrair</button>
+                <button type="button" onclick="dividir()">Subtrair</button>
+                <button type="button" onclick="multiplicar()">Multiplicar</button>-->
                 <input type="text" id="resp1" readonly>
-                <script>
-                    function somar(){
-                        var num1, num2, resp1;
-    
-                        num1 = parseFloat(document.getElementById("num1").value);
-                        num2 = parseFloat(document.getElementById("num2").value);
-    
-                        resp1 = num1 + num2;
-    
-                        document.getElementById("resp1").value = resp1;
-                    }
-                </script>
             </form>
         </div>
         <div id="calculo">
@@ -66,18 +32,6 @@
                 <input type="text"id="num4">
                 <button type="button" onclick="subtrair()">Subtrair</button>
                 <input type="text" id="resp2" readonly>
-                <script>
-                    function subtrair(){
-                        var num3, num4, resp2;
-    
-                        num3 = parseFloat(document.getElementById("num3").value);
-                        num4 = parseFloat(document.getElementById("num4").value);
-    
-                        resp2 = num3 - num4;
-    
-                        document.getElementById("resp2").value = resp2;
-                    }
-                </script>
             </form>
         </div>
         <div id="calculo">
@@ -88,40 +42,16 @@
                 <input type="text"id="num6">
                 <button type="button" onclick="dividir()">Subtrair</button>
                 <input type="text" id="resp3" readonly>
-                <script>
-                    function dividir(){
-                        var num5, num6, resp3;
-    
-                        num5 = parseFloat(document.getElementById("num5").value);
-                        num6 = parseFloat(document.getElementById("num6").value);
-    
-                        resp3 = num5 / num6;
-    
-                        document.getElementById("resp3").value = resp3;
-                    }
-                </script>
             </form>
         </div>
         <div id="calculo">
             <h1>MULTIPLIÇÃO</h1>
             <form>
                 <input type="text" id="num7">
-                /
+                *
                 <input type="text"id="num8">
-                <button type="button" onclick="multiplicar()">Subtrair</button>
+                <button type="button" onclick="multiplicar()">Multiplicar</button>
                 <input type="text" id="resp4" readonly>
-                <script>
-                    function multiplicar(){
-                        var num7, num8, resp4;
-    
-                        num7 = parseFloat(document.getElementById("num7").value);
-                        num8 = parseFloat(document.getElementById("num8").value);
-    
-                        resp4 = num7 * num8;
-    
-                        document.getElementById("resp4").value = resp4;
-                    }
-                </script>
             </form>
         </div>
     </article>
