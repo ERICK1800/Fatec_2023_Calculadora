@@ -14,14 +14,21 @@
             <form>
                 <h1 id="title">Calculadora Básica</h1>
                 <br>
-                <input type="text" id="num1">
-                <input type="text" id="num2">
+                <input type="number" id="num1">
+                <input type="number" id="num2">
                 <br>
                 <button type="button" onclick="somar()">Somar</button>
                 <button type="button" onclick="subtrair()">Subtrair</button>
                 <br>
-                <button type="button" onclick="dividir()">Subtrair</button>
+                <button type="button" onclick="dividir()">Dividir</button>
                 <button type="button" onclick="multiplicar()">Multiplicar</button>
+                <br>
+                <button type="button" onclick="calcularPorcentagem()">Porcentagem</button>
+                <button type="button" onclick="calcularRaiz()">Raiz Quadrada</button>
+                <br>
+                <button type="button" onclick="limparCampos()" id="limpar">Limpar</button>
+                <p>(Para a Porcentagem: Primeiro o número principal e depois a porcentagem)</p>
+                <p>(Para Raiz quadrada: Apenas o primeiro número)</p>
                 <br>
                 <input type="text" id="resp1" readonly>
             </form>
